@@ -10,5 +10,5 @@ rev=n%10;
 n=n/10;
 temp=temp*10+rev;
 }
-printf("the no.of digits are %d",temp);
+printf("reverse a number is %d",temp);
 }
