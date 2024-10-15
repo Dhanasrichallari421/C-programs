@@ -1,0 +1,12 @@
+#include<stdio.h>
+int n,i;
+int main()
+{
+printf("enter  number");
+scanf("%d",&n);
+for(i=0;n>0;i++)
+{
+ n/10;
+ }
+ printf("the number of digit is %d",i);
+ }
