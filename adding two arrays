@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int row,col,array1[2][2]={{1,5},{5,4}},array2[2][2]={{1,4},{3,4}};
+{
+for(row=0;row<2;row++)
+{
+for(col=0;col<2;col++)
+{
+printf("%d\t", array1[row][col]+array2[row][col]);
+}
+printf("\n");
+}
+}
+}
