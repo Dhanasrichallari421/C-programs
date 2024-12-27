@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+
+    struct student
+    {
+      int sno;
+      char sname[30];
+      char scourse[30];
+      double sfee;
+    };
+    struct student s1;
+    printf("enter the sno \n");
+    scanf("%d",&s1.sno);
+    printf("enter the student name \n");
+    scanf(" %[^\n]",s1.sname);
+    printf("enter the student course name\n");
+    scanf(" %[^\n]",s1.scourse);
+    printf("\n enter the sfee");
+    scanf("%lf",&s1.sfee);
+    printf("%d %s %s %lf \n",s1.sno,s1.sname,s1.scourse,s1.sfee);
+    return 0;
+}
