@@ -1,0 +1,36 @@
+#include<stdio.h>
+struct bike
+{
+
+    int id;
+    char name[20];
+    double price;
+    double millage;
+};
+struct bike accept(struct bike b1);
+void display(struct bike b1);
+int main()
+{
+
+    struct bike b1;
+    b1=accept(b1);
+    display(b1);
+}
+struct bike accept(struct bike b1)
+{
+     printf("\n enter the bike id:");
+     scanf("%d",&b1.id);
+     printf("\n enter the bike name:");
+     scanf("%s",b1.name);
+     printf("\n enter the bike price:");
+     scanf("%lf",&b1.price);
+     printf("\n enter the bike milage:");
+     scanf("%lf",&b1.millage);
+     return b1;
+}
+void display(struct bike b1)
+{
+
+    printf("%d %s %lf %lf",b1.id,b1.name,b1.price,b1.millage);
+}
+
